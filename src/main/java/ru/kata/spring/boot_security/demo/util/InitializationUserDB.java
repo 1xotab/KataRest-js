@@ -34,7 +34,7 @@ public class InitializationUserDB {
         roleService.saveRole(role2);
 
         Set<Role> set = new HashSet<>();
-        set.add(role1);
+        //set.add(role1);
         set.add(role2);
 
         User user1 = new User(1L, "Name", "Surname", 10, "xotab", new BCryptPasswordEncoder(8).encode("123"), set);
